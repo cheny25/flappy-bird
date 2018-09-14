@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.page{
+	margin: 0 auto;
+	position: relative;
+	width: 343px;
+	height: 480px;
+	overflow: hidden;
+	background: url(../images/bg.jpg);
+}
+.header{
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+.head{
+	float: left;
+}
+.bird{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+.start{
+	position: absolute;
+	bottom: 210px;
+	left: 130px;
+}
+
+#flyBird{
+	display: none;
+	width: 40px;
+	height: 26px;
+	position: absolute;
+	left: 50px;
+    top:200px;
+	background: url(../images/bird0.png);
+	animation: flyBird 0.4s infinite;
+}
+@keyframes flyBird {
+	from{background: url(../images/bird0.png);}
+	to{background: url(../images/bird1.png);}
+}
+
+#flyBirdUp{
+    /*display: none;*/
+    width: 40px;
+    height: 26px;
+    position: absolute;
+    left: 50px;
+    top:200px;
+    animation: flyBirdUp 0.4s infinite;	
+}
+#flyBirdDown{
+    /*display: none;*/
+    width: 40px;
+	height: 26px;
+    position: absolute;
+    left: 50px;
+    top:200px;
+    animation: flyBirdDown 0.4s infinite;	
+}
+@keyframes flyBirdUp {
+	from{background: url(../images/up_bird0.png);}
+	to{background: url(../images/up_bird1.png);}
+}
+@keyframes flyBirdDown {
+	from{background: url(../images/down_bird0.png);}
+	to{background: url(../images/down_bird1.png);}
+}
+
+.score {
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    text-align: center;
+    width: 40px;
+    height: 53px;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 55px;
+    display: none;
+}
+
+.allPipe{
+    height: 423px;
+    position: absolute;
+    top: 0;
+}
+
+#pipe{
+	height: 423px;
+	width: 62px;
+    position: absolute;
+    top: 0;
+}
+#upPipe{
+	width: 62px;
+	height: 60px;
+	position: absolute;
+	background: url(../images/up_pipe.png);
+}
+#downPipe{
+	width: 62px;
+	height: 60px;
+	position: absolute;
+	background: url(../images/down_pipe.png);
+}
+#upMod{
+	width: 62px;
+	position: absolute;
+	top: 0px;
+	background: url(../images/up_mod.png);
+}
+#downMod{
+	width: 62px;
+	position: absolute;
+	bottom: 0px;
+	background: url(../images/down_mod.png);
+}
+
+
+
+.banner{
+	position: absolute;
+	bottom: 43px;
+	width: 343px;
+	height: 14px;
+	overflow: hidden;
+}
+.banner_img{
+	width: 686px;
+}
+.banner img{
+	position: relative;
+	float: left;
+}
+.gameover{
+	display: none;
+}
+.over{
+    position: absolute;
+    left: 65px;
+    top: 100px;
+    z-index: 10;
+}
+.message{
+    width: 269px;
+    height: 135px;
+    background: url(../images/message.jpg) no-repeat;
+    position: absolute;
+    left: 40px;
+    top:150px;
+    z-index: 10;
+}
+.showScore{
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  font-size: 35px;
+  color: #fff;
+}
+.restart{
+	position: absolute;
+	left: 130px;
+	top: 300px;
+	z-index: 10;
+}

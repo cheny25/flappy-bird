@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flappy bird</title>
+	<link rel="stylesheet" type="text/css" href="css/flappy bird.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/flappy bird.js"></script>
+</head>
+<body>
+<div class="page">
+	<!-- 开始页面头部 -->
+	<div class="header">
+		<img src="images/head.jpg" class="head">
+		<img src="images/bird0.png" class="bird" id="bird0">
+		<img src="images/bird1.png" class="bird" id="bird1">
+	</div>
+	<!-- 小鸟 -->
+	<div class="flyBird" id="flyBird"></div>
+	<!-- 分数 -->
+	<div class="score">0</div>
+	<!-- 管道 -->
+	<div class="allPipe"></div>
+
+	<!-- 游戏下方的滚动条 -->
+	<input type="image" name="start" src="images/start.jpg" class="start">
+	<div class="banner">
+		<div class="banner_img">
+			<img src="images/banner.jpg">
+			<img src="images/banner.jpg">
+		</div>
+	</div>	
+	<!-- 游戏结束 -->
+    <div class="gameover">
+        <div class="over">
+            <img src="images/game_over.jpg">
+        </div>
+        <div class="message">
+        	<span class="showScore">11</span>
+        </div>
+        <div>
+        	<img src="images/ok.jpg" class="restart">
+        </div>
+    </div>
+</div>
+</body>
+</html>
